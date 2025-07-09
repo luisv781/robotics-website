@@ -1,16 +1,15 @@
 import './style.css'
 import chsRobotLogo from './croboticslogo.jpg'
 
-let instagramEmbed = document.querySelector('#instagram-embed-0');
-
 document.querySelector('#roboticsLogo').setAttribute("src", `${chsRobotLogo}`);
 
-instagramEmbed.style.borderRadius = "1rem";
-instagramEmbed.style.border = "";
+const interval = setInterval(() => {
+  const instagramEmbed = document.querySelector('#instagram-embed-0');
+  if (instagramEmbed) {
+    clearInterval(interval);
 
-//.innerHTML = `
-//  <img src="${chsRobotLogo}" class="logo" alt="CHS Robotics logo" />`
+    instagramEmbed.style.borderRadius = "1rem";
+    instagramEmbed.style.border = "";
+  }
+}, 100);
 
-
-
-//setupCounter(document.querySelector('#counter'))
