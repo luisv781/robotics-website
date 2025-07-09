@@ -1,11 +1,16 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
 import chsRobotLogo from './croboticslogo.jpg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#roboticsLogo').innerHTML = `
-  <img src="${chsRobotLogo}" class="logo" alt="Vite logo" />
-`
+let instagramEmbed = document.querySelector('#instagram-embed-0');
 
-setupCounter(document.querySelector('#counter'))
+document.querySelector('#roboticsLogo').setAttribute("src", `${chsRobotLogo}`);
+
+instagramEmbed.style.borderRadius = "1rem";
+instagramEmbed.style.border = "";
+
+//.innerHTML = `
+//  <img src="${chsRobotLogo}" class="logo" alt="CHS Robotics logo" />`
+
+
+
+//setupCounter(document.querySelector('#counter'))
