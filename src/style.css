@@ -39,6 +39,19 @@ a:hover {
   filter: drop-shadow(0 0 2em #503cffaa);
 }
 
+#navBar {
+  @apply sticky top-0 z-1 backdrop-blur-lg;
+}
+#navBar::after {
+  @apply bg-linear-30 from-gray-950 to-slate-900;
+  content: '';
+  position: absolute;
+  inset: 0;
+  
+  opacity: 0.8;
+  z-index: -1;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -46,5 +59,18 @@ a:hover {
   }
   a:hover {
     color: #747bff;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #navBar nav {
+    @apply justify-between px-4;
+  }
+
+  .section {
+    @apply flex-col items-center;
+  }
+  .section div {
+    @apply max-w-full text-center;
   }
 }
