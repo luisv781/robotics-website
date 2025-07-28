@@ -62,9 +62,9 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 900px) {
   #navBar nav {
-    @apply justify-between px-4;
+    @apply justify-between px-4 gap-0;
   }
 
   .section {
@@ -73,4 +73,13 @@ a:hover {
   .section div {
     @apply max-w-full text-center;
   }
+}
+@media screen and (max-width: 500px) {
+  #navBar nav {
+    @apply justify-center;
+  }
+  #navBar nav .links {
+    @apply hidden;
+  }
+  
 }
