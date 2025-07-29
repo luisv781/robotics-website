@@ -24,19 +24,15 @@ body {
 }
 
 a {
-  @apply text-blue-100 font-bold transition-colors;
-  text-decoration: none;
-}
-a:hover {
-  @apply text-blue-500;
+  @apply text-blue-100 font-bold transition-colors no-underline hover:text-blue-500;
 }
 
 .logo {
-  will-change: filter;
-  transition: filter 300ms;
+  @apply will-change-[filter] transition-[filter] duration-300 hover:drop-shadow-[0_0_2em_#503cffaa];
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #503cffaa);
+
+.side {
+  @apply hover:scale-105 transition-transform;
 }
 
 #navBar {
