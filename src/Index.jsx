@@ -56,6 +56,12 @@ theTeam.then(teamSection => {
                 image={"https://placehold.co/128x128"}
                 description={"Danny is a junior engineer with a strong interest in software development and robotics. He is always looking for new challenges and opportunities to grow."}
             />
+            <TeamMember
+                name={"Eliseo Bugarin"}
+                role={"Beginner Member"}
+                image={"https://placehold.co/128x128"}
+                description={"Eliseo is a beginner member of the team, eager to learn and contribute. He has a passion for technology and is excited to be part of the robotics community."}
+            />
         </>
         
     )
