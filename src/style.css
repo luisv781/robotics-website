@@ -16,7 +16,7 @@
 }
 
 body {
-  @apply m-0 min-w-80 min-h-screen overflow-x-hidden flex place-items-center;
+  @apply m-0 min-w-80 max-w-screen min-h-screen overflow-x-hidden flex place-items-center;
 }
 
 #app {
