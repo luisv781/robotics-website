@@ -1,31 +1,21 @@
-import './style.css'
-//import robotLogo from './croboticslogo.jpg'
-import NavBar from './NavigationBar';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import './style.css'
 
-//document.querySelector('#roboticsLogo').setAttribute("src", `${robotLogo}`);
-
-const styleEmbed = setInterval(() => {
-  const instagramEmbed = document.querySelector('#instagram-embed-0');
-  if (instagramEmbed) {
-    clearInterval(styleEmbed);
-
-    instagramEmbed.style.borderRadius = "1rem";
-    instagramEmbed.style.border = "";
-  }
-}, 100);
+import NavBar from './components/NavigationBar';
 
 
-new Promise((resolve) => {
-  const checkNavBar = setInterval(() => {
+let checkForNavbar = new Promise((resolve) => {
+  const interval = setInterval(() => {
     const navBar = document.querySelector('#navBar');
     if (navBar) {
-      clearInterval(checkNavBar);
+      clearInterval(interval);
       resolve(navBar);
     }
   }, 100);
-}).then(navBar => {
-  createRoot(navBar).render(<NavBar />);
 });
+
+checkForNavbar.then(navBar => {
+  createRoot(navBar).render(<NavBar />);
+})
 
