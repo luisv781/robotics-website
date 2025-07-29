@@ -1,0 +1,14 @@
+import React from "react";
+
+import { IconBrandInstagram } from "@tabler/icons-react";
+
+export default function Footer() {
+    return (
+        <footer className="flex justify-between items-center px-32 py-4 h-20 bg-indigo-950">
+            <p className="text-gray-300">Chavez High School Robotics Club</p>
+            <a href="https://www.instagram.com/cchavezroboticsclub/">
+                <IconBrandInstagram color="#d1d5dc" size={32} stroke={1.5} />
+            </a>
+        </footer>
+    )
+}
