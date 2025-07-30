@@ -1,27 +1,28 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
+import './index.css';
 
 import TeamMember from './components/TeamMember';
 
 let styleEmbed = new Promise((resolve) => {
     const interval = setInterval(() => {
-      const instagramEmbed = document.querySelector('#instagram-embed-0');
-      if (instagramEmbed) {
-        clearInterval(interval);
-        resolve(instagramEmbed);
-      }
+        const instagramEmbed = document.querySelector('#instagram-embed-0');
+        if (instagramEmbed) {
+          clearInterval(interval);
+          resolve(instagramEmbed);
+        }
     }, 100);
 });
 
 let theTeam = new Promise((resolve) => {
-  const interval = setInterval(() => {
-    const teamSection = document.querySelector('#theTeam');
-    if (teamSection) {
-      clearInterval(interval);
-      resolve(teamSection);
-    }
-  }, 100);
+    const interval = setInterval(() => {
+        const teamSection = document.querySelector('#theTeam');
+        if (teamSection) {
+            clearInterval(interval);
+            resolve(teamSection);
+        }
+    }, 100);
 });
 
 styleEmbed.then(embed => {
@@ -32,6 +33,12 @@ styleEmbed.then(embed => {
 theTeam.then(teamSection => {
     createRoot(teamSection).render(
         <>
+            <TeamMember
+                name={"Mr. Saper"}
+                role="Club Sponsor"
+                image={"https://placehold.co/128x128"}
+                description={"Mr. Saper is the club sponsor, providing guidance and support to the team. He has a wealth of experience in education and technology."}
+            />
             <TeamMember
                 name={"Aaron Perez Almanza"}
                 role={"Group Leader"}
