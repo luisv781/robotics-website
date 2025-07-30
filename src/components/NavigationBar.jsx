@@ -1,5 +1,5 @@
 import React from 'react';
-import roboticsLogo from '/img/croboticslogo.jpg';
+import roboticsLogo from '/img/robotlogo.jpg';
 
 export default function NavBar() {
     return (

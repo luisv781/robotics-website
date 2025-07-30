@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css'
+import secret from './uhm.js';
 
 import NavBar from './components/NavigationBar';
 import Footer from './components/Footer';
@@ -31,5 +32,15 @@ checkForNavbar.then(navBar => {
 })
 checkForFooter.then(footer => {
   createRoot(footer).render(<Footer />);
+  let attempts = 3;
+  let timeout = setTimeout(() => {
+    let footerHeader = document.querySelector('#footerHeader');
+    if (footerHeader) {
+      clearTimeout(timeout);
+      footerHeader.addEventListener('click', secret);
+    } else if (attempts > 0) {
+      attempts--;
+    } else clearTimeout(timeout);
+  }, 100);
 })
 
