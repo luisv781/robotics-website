@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -23,8 +25,8 @@ body {
   @apply m-0 p-0 flex flex-col bg-gradient-to-br from-gray-800 to-gray-950 text-center;
 }
 
-a {
-  @apply text-blue-100 font-bold transition-colors no-underline hover:text-blue-500;
+.links a {
+  @apply flex items-center text-blue-100 font-bold transition-colors no-underline hover:text-blue-500;
 }
 
 
@@ -43,11 +45,11 @@ a {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: var(--color-slate-800);
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: var(--color-blue-300);
   }
 }
 
