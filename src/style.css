@@ -25,15 +25,8 @@ body {
   @apply m-0 p-0 flex flex-col bg-gradient-to-br from-gray-800 to-gray-950 text-center;
 }
 
-.links a {
-  @apply flex items-center text-blue-100 font-bold transition-colors no-underline hover:text-blue-500;
-}
 
-
-#navBar {
-  @apply sticky top-0 z-1 backdrop-blur-lg;
-}
-#navBar::after {
+nav::after {
   @apply bg-linear-30 from-gray-950 to-slate-900;
   content: '';
   position: absolute;
@@ -41,6 +34,9 @@ body {
   
   opacity: 0.8;
   z-index: -1;
+}
+nav .links a {
+  @apply flex items-center text-blue-100 font-bold transition-colors no-underline hover:text-blue-500;
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,7 +50,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  #navBar nav {
+  nav {
     @apply justify-between px-4 gap-0;
   }
 
@@ -66,11 +62,10 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  #navBar nav {
+  nav {
     @apply justify-center;
   }
-  #navBar nav .links {
+  nav .links {
     @apply hidden;
   }
-  
 }
