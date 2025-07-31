@@ -26,15 +26,12 @@ export default function secret() {
 
         div.appendChild(elm);
         document.body.appendChild(div);
-        let t = setTimeout(() => {
+        setTimeout(() => {
           elm.style.opacity = "1";
-          clearTimeout(t);
-          let t2 = setTimeout(() => {
+          setTimeout(() => {
             elm.style.opacity = "0";
-            clearTimeout(t2);
-            let t3 = setTimeout(() => {
+            setTimeout(() => {
                 div.remove();
-                clearTimeout(t3);
             }, 300);
           }, 1300);
         }, 100);

@@ -33,14 +33,14 @@ checkForNavbar.then(navBar => {
 checkForFooter.then(footer => {
   createRoot(footer).render(<Footer />);
   let attempts = 3;
-  let timeout = setTimeout(() => {
+  let interval = setInterval(() => {
     let footerHeader = document.querySelector('#footerHeader');
     if (footerHeader) {
-      clearTimeout(timeout);
+      clearInterval(interval);
       footerHeader.addEventListener('click', secret);
     } else if (attempts > 0) {
       attempts--;
-    } else clearTimeout(timeout);
+    } else clearInterval(interval);
   }, 100);
 })
 
