@@ -1,12 +1,12 @@
 import eImg from '/src/img/jointheclub.png';
 
 export default function secret() {
-    console.log("Secret function triggered!");
     if (!document.querySelector('body > #secret-overlay')) {
-        console.log("Creating secret overlay...");
         let div = document.createElement('div');
         div.id = "secret-overlay";
         div.style.position = "fixed";
+        div.style.display = "flex";
+        div.style.placeContent = "center";
         div.style.top = "0";
         div.style.left = "0";
         div.style.width = "100%";
@@ -14,22 +14,23 @@ export default function secret() {
         div.style.zIndex = "1000";
         div.style.pointerEvents = "none";
         
-        let elm = document.createElement('img');
-        elm.src = eImg;
-        elm.alt = "";
-        elm.style.display = "block";
-        elm.style.margin = "auto auto";
-        elm.style.height = "90%";
-        elm.style.width = "auto";
-        elm.style.opacity = "0";
-        elm.style.transition = "opacity 0.3s ease-in-out";
+        let img = document.createElement('img');
+        img.src = eImg;
+        img.alt = "";
+        img.style.display = "block";
+        img.style.margin = "auto auto";
+        img.style.maxWidth = "80%";
+        img.style.maxHeight = "80%";
+        img.style.filter = "drop-shadow(0 0 2em #00000080)";
+        img.style.opacity = "0";
+        img.style.transition = "opacity 0.3s ease-in-out";
 
-        div.appendChild(elm);
+        div.appendChild(img);
         document.body.appendChild(div);
         setTimeout(() => {
-          elm.style.opacity = "1";
+          img.style.opacity = "1";
           setTimeout(() => {
-            elm.style.opacity = "0";
+            img.style.opacity = "0";
             setTimeout(() => {
                 div.remove();
             }, 300);
