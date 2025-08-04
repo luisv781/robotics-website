@@ -50,7 +50,7 @@ app.render(
 
         <div className="section flex flex-col">
             <h1 className="text-4xl font-bold my-4" id="about-us">Meet the Team</h1>
-            <div className="flex justify-around flex-wrap gap-8 p-8" id="theTeam">
+            <div className="justify-center items-center flex-wrap gap-8 p-8 grid grid-cols-[repeat(auto-fit,minmax(24em,1fr))]" id="theTeam">
                 <TeamMember
                     name={"Mr. Saper"}
                     role="Club Sponsor"

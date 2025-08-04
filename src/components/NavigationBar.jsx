@@ -11,7 +11,7 @@ export default function NavBar() {
             </a>
             <div className="links flex gap-8">
                 <a href="#about-us">About Us</a>
-                <a href="/">Join the Club</a>
+                <a href="https://forms.gle/JyCoz9qwUjzfTGiBA" target="_blank">Join the Club</a>
             </div>
         </nav>
     )
