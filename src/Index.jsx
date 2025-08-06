@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 
 import robotLogo from '/img/robotlogo.jpg';
 import dremelImage from '/img/dremel.jpg';
+import memberInfo from './MemberInfo';
 
 let app = createRoot(document.querySelector('#app'));
 
@@ -28,7 +29,18 @@ app.render(
             <div className="my-8 mr-auto px-16 max-lg:px-4 max-w-2/3 text-left font-normal">
                 <h2 className="font-bold text-2xl">Our Mission</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque necessitatibus accusamus atque neque dicta vero mollitia aliquid omnis obcaecati rem nesciunt perspiciatis dignissimos facilis placeat recusandae in animi, voluptatum sit quos! Facilis laudantium doloribus nihil repellat sunt tempora, harum modi deleniti eaque consectetur praesentium voluptas vel delectus accusamus distinctio repellendus officiis repudiandae expedita non inventore sit. Sed ullam quam deserunt eveniet molestias rerum deleniti a quidem voluptatem sequi odio iste temporibus, non repellendus maxime. Accusantium soluta iste reprehenderit optio consequatur inventore saepe odit molestias non, ipsam facere sapiente, cum, fuga in. Distinctio in explicabo excepturi laudantium assumenda voluptatem dolor!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa itaque necessitatibus accusamus atque neque dicta vero 
+                    mollitia aliquid omnis obcaecati rem nesciunt perspiciatis dignissimos 
+                    facilis placeat recusandae in animi, voluptatum sit quos! Facilis 
+                    laudantium doloribus nihil repellat sunt tempora, harum modi deleniti 
+                    eaque consectetur praesentium voluptas vel delectus accusamus distinctio 
+                    repellendus officiis repudiandae expedita non inventore sit. Sed ullam 
+                    quam deserunt eveniet molestias rerum deleniti a quidem voluptatem sequi 
+                    odio iste temporibus, non repellendus maxime. Accusantium soluta iste 
+                    reprehenderit optio consequatur inventore saepe odit molestias non, ipsam 
+                    facere sapiente, cum, fuga in. Distinctio in explicabo excepturi laudantium 
+                    assumenda voluptatem dolor!
                 </p>
             </div>
             <div id="ig-embed" className="side m-8 mr-16 max-w-1/3 max-h-full hover:rotate-1">
@@ -43,7 +55,19 @@ app.render(
             <div className="my-8 ml-auto px-16 max-lg:px-4 max-w-2/3 text-right font-normal">
                 <h2 className="font-bold text-2xl">Team Structure</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fugiat doloremque dolor est cumque deleniti laboriosam voluptate, ab consequuntur illum! Enim numquam exercitationem consequatur cupiditate aspernatur esse fuga cum minima amet corporis accusamus facilis impedit sit rem delectus iusto, libero laborum odio molestias. Dignissimos in odio quibusdam blanditiis id, totam sit voluptates deserunt enim ipsam quasi rerum cumque, fuga, illo impedit omnis unde magni minus ipsa. Hic perspiciatis architecto quibusdam quam excepturi necessitatibus temporibus laboriosam! Repudiandae accusantium, quam animi possimus officia, consequatur quibusdam quos aperiam nostrum magni perferendis hic dicta error et laboriosam architecto! Hic, dolor. Aliquam veritatis omnis eos.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugit fugiat doloremque dolor est cumque deleniti laboriosam 
+                    voluptate, ab consequuntur illum! Enim numquam exercitationem 
+                    consequatur cupiditate aspernatur esse fuga cum minima amet 
+                    corporis accusamus facilis impedit sit rem delectus iusto, 
+                    libero laborum odio molestias. Dignissimos in odio quibusdam 
+                    blanditiis id, totam sit voluptates deserunt enim ipsam quasi 
+                    rerum cumque, fuga, illo impedit omnis unde magni minus ipsa. 
+                    Hic perspiciatis architecto quibusdam quam excepturi necessitatibus 
+                    temporibus laboriosam! Repudiandae accusantium, quam animi possimus 
+                    officia, consequatur quibusdam quos aperiam nostrum magni 
+                    perferendis hic dicta error et laboriosam architecto! Hic, dolor. 
+                    Aliquam veritatis omnis eos.
                 </p>
             </div>
         </div>
@@ -52,10 +76,7 @@ app.render(
             <h1 className="text-4xl font-bold my-4" id="about-us">Meet the Team</h1>
             <div className="justify-center items-center flex-wrap gap-8 p-8 grid grid-cols-[repeat(auto-fit,minmax(24em,1fr))]" id="theTeam">
                 <TeamMember
-                    name={"Mr. Saper"}
-                    role="Club Sponsor"
-                    image={"https://placehold.co/128x128"}
-                    description={"Mr. Saper is the club sponsor, providing guidance and support to the team. He has a wealth of experience in education and technology."}
+                    {...memberInfo[0]}
                 />
                 <TeamMember
                     name={"Aaron Perez Almanza"}
