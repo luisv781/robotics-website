@@ -75,39 +75,12 @@ app.render(
         <div className="section flex flex-col">
             <h1 className="text-4xl font-bold my-4" id="about-us">Meet the Team</h1>
             <div className="justify-center items-center flex-wrap gap-8 p-8 grid grid-cols-[repeat(auto-fit,minmax(24em,1fr))]" id="theTeam">
-                <TeamMember
-                    {...memberInfo[0]}
-                />
-                <TeamMember
-                    name={"Aaron Perez Almanza"}
-                    role={"Group Leader"}
-                    image={"https://placehold.co/128x128"}
-                    description={"Aaron is a software engineer with over 5 years of experience in web development. He loves coding and sharing knowledge with others."}
-                />
-                <TeamMember
-                    name={"Luis Villela"}
-                    role={"Senior Robot Man"}
-                    image={"https://placehold.co/128x128"}
-                    description={"Luis is a senior software engineer with a passion for robotics and automation. He has been working in the field for over 10 years and enjoys mentoring others."}
-                />
-                <TeamMember
-                    name={"Carlos Paiz"}
-                    role={"Amateur Engineer"}
-                    image={"https://placehold.co/128x128"}
-                    description={"Carlos is an amateur engineer with a keen interest in robotics and automation. He is always eager to learn and improve his skills."}
-                />
-                <TeamMember
-                    name={"Danny Argueta"}
-                    role={"Junior Engineer"}
-                    image={"https://placehold.co/128x128"}
-                    description={"Danny is a junior engineer with a strong interest in software development and robotics. He is always looking for new challenges and opportunities to grow."}
-                />
-                <TeamMember
-                    name={"Eliseo Bugarin"}
-                    role={"Beginner Member"}
-                    image={"https://placehold.co/128x128"}
-                    description={"Eliseo is a beginner member of the team, eager to learn and contribute. He has a passion for technology and is excited to be part of the robotics community."}
-                />
+                <TeamMember {...memberInfo[0]} />
+                <TeamMember {...memberInfo[1]} />
+                <TeamMember {...memberInfo[2]} />
+                <TeamMember {...memberInfo[3]} />
+                <TeamMember {...memberInfo[4]} />
+                <TeamMember {...memberInfo[5]} />
             </div>
         </div>
 
