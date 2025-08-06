@@ -32,7 +32,7 @@ app.render(
                 </p>
             </div>
             <div id="ig-embed" className="side m-8 mr-16 max-w-1/3 max-h-full hover:rotate-1">
-                <iframe className="rounded-2xl h-full bg-white" src="https://www.instagram.com/cchavezroboticsclub/embed/"></iframe>
+                <iframe title="CHS Robotics Instagram Page" className="rounded-2xl h-full bg-white" src="https://www.instagram.com/cchavezroboticsclub/embed/"></iframe>
             </div>
         </div>
 
