@@ -29,18 +29,17 @@ app.render(
             <div className="my-8 mr-auto px-16 max-lg:px-4 max-w-2/3 text-left font-normal">
                 <h2 className="font-bold text-2xl">Our Mission</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Culpa itaque necessitatibus accusamus atque neque dicta vero 
-                    mollitia aliquid omnis obcaecati rem nesciunt perspiciatis dignissimos 
-                    facilis placeat recusandae in animi, voluptatum sit quos! Facilis 
-                    laudantium doloribus nihil repellat sunt tempora, harum modi deleniti 
-                    eaque consectetur praesentium voluptas vel delectus accusamus distinctio 
-                    repellendus officiis repudiandae expedita non inventore sit. Sed ullam 
-                    quam deserunt eveniet molestias rerum deleniti a quidem voluptatem sequi 
-                    odio iste temporibus, non repellendus maxime. Accusantium soluta iste 
-                    reprehenderit optio consequatur inventore saepe odit molestias non, ipsam 
-                    facere sapiente, cum, fuga in. Distinctio in explicabo excepturi laudantium 
-                    assumenda voluptatem dolor!
+                    At CHS's Robotics Club, our mission is to inspire and empower students 
+                    through hands-on experiences in robotics and engineering. We are 
+                    committed to providing a collaborative and inclusive environment 
+                    where students can develop critical problem-solving skills, foster 
+                    creativity, and build lasting friendships. By participating in VEX 
+                    Robotics competitions, our team members not only hone their technical 
+                    abilities but also learn valuable life skills such as teamwork, 
+                    leadership, and resilience. We believe that through innovation 
+                    and perseverance, our students will develop the confidence to 
+                    tackle the challenges of tomorrow and become the engineers, 
+                    scientists, and leaders of the future.
                 </p>
             </div>
             <div id="ig-embed" className="side m-8 mr-16 max-w-1/3 max-h-full hover:rotate-1">
@@ -55,19 +54,17 @@ app.render(
             <div className="my-8 ml-auto px-16 max-lg:px-4 max-w-2/3 text-right font-normal">
                 <h2 className="font-bold text-2xl">Team Structure</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Fugit fugiat doloremque dolor est cumque deleniti laboriosam 
-                    voluptate, ab consequuntur illum! Enim numquam exercitationem 
-                    consequatur cupiditate aspernatur esse fuga cum minima amet 
-                    corporis accusamus facilis impedit sit rem delectus iusto, 
-                    libero laborum odio molestias. Dignissimos in odio quibusdam 
-                    blanditiis id, totam sit voluptates deserunt enim ipsam quasi 
-                    rerum cumque, fuga, illo impedit omnis unde magni minus ipsa. 
-                    Hic perspiciatis architecto quibusdam quam excepturi necessitatibus 
-                    temporibus laboriosam! Repudiandae accusantium, quam animi possimus 
-                    officia, consequatur quibusdam quos aperiam nostrum magni 
-                    perferendis hic dicta error et laboriosam architecto! Hic, dolor. 
-                    Aliquam veritatis omnis eos.
+                    Our robotics team is structured to ensure that every student has 
+                    the opportunity to contribute and grow, no matter their skill 
+                    level or experience. The team is divided into key roles that 
+                    encourage collaboration, creativity, and leadership development: 
+                    the design/engineering and programming roles. Students in 
+                    design/engineering focus on brainstorming, designing, and 
+                    building the robot. They work closely with other members to 
+                    solve engineering challenges and incorporate innovative 
+                    solutions into the robot's design. The programming team is 
+                    responsible for writing the code that controls the robot's 
+                    movements and functionality.
                 </p>
             </div>
         </div>

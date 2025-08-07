@@ -17,8 +17,9 @@ const memberInfo = [
         name: "Luis Villela",
         image: "https://placehold.co/128x128",
         role: "Senior Robot Man",
-        description: `Luis is a software engineer with a passion for robotics and 
-        automation. He has been a part of the club since 2024 and enjoys mentoring others.`,
+        description: `Luis is a software engineer with a passion for 
+        robotics and automation. He is part of the club's programming 
+        division and has been a part of the club since 2024.`,
     },
     {
         name: "Carlos Paiz",
