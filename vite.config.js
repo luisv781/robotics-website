@@ -6,7 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  base: '/robotics-website/',
   build: {
     rollupOptions: {
       input: {
