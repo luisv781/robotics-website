@@ -4,7 +4,7 @@ import dremelImage from '/img/dremel.jpg';
 
 export default function AboutSection() {
     return (
-        <>
+        <div className="bg-blue-950/10">
             <div className="section flex justify-around max-w-full">
                 <div className="my-8 mr-auto px-16 max-lg:px-4 max-w-2/3 text-left font-normal">
                     <h2 className="font-bold text-2xl">Our Mission</h2>
@@ -48,6 +48,6 @@ export default function AboutSection() {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
