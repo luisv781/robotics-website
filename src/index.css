@@ -1,12 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 .side {
     @apply shadow-xl transition-transform hover:scale-105;
 }
 
-
 @property --angle {
-    syntax: "<angle>";
+    syntax: '<angle>';
     inherits: false;
     initial-value: 0deg;
 }
@@ -14,7 +13,8 @@
 .logo {
     @apply my-4 relative z-0 transition-transform duration-300;
 }
-.logo::before, .logo::after {
+.logo::before,
+.logo::after {
     content: '';
     position: absolute;
     display: block;
@@ -26,7 +26,11 @@
     padding: 4px;
     z-index: -1;
 
-    background-image: conic-gradient(from var(--angle), transparent 20% 0%, var(--color-sky-500) 90%);
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 20% 0%,
+        var(--color-sky-500) 90%
+    );
     border-radius: calc(infinity * 1px);
     opacity: 70%;
     animation: borderAnim 10s linear infinite;
@@ -45,13 +49,12 @@
 
 @keyframes borderAnim {
     0% {
-      --angle: 0deg;
+        --angle: 0deg;
     }
     100% {
-      --angle: 360deg;
+        --angle: 360deg;
     }
 }
-
 
 @media screen and (max-width: 900px) {
     .side {
