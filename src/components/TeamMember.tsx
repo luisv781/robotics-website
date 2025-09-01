@@ -1,4 +1,11 @@
-export default function TeamMember({ name, role, image, description }) {
+interface TeamMemberProps {
+    name: string;
+    role: string;
+    image: string;
+    description: string;
+}
+
+export default function TeamMember({ name, role, image, description }: TeamMemberProps) {
     return (
         <div className='flex flex-col items-center p-4 rounded-xl bg-gray-100/10 border-gray-50/20 border-1 transition-transform hover:scale-105 shadow-md'>
             <img
