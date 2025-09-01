@@ -1,6 +1,5 @@
-import React from 'react';
 import { IconBrandInstagram } from '@tabler/icons-react';
-import secret from '/src/uhm.js';
+import secret from '../uhm.ts';
 
 export default function Footer() {
     return (

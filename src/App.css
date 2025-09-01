@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+.side {
+    @apply shadow-xl transition-transform hover:scale-105;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.logo {
+    @apply my-4 relative z-0 transition-transform duration-300;
+}
+.logo::before,
+.logo::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 4px;
+    z-index: -1;
+
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 20% 0%,
+        var(--color-sky-500) 90%
+    );
+    border-radius: calc(infinity * 1px);
+    opacity: 70%;
+    animation: borderAnim 10s linear infinite;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+.logo::before {
+    @apply blur-md opacity-60;
+}
+.logo:hover {
+    @apply before:opacity-80 after:opacity-100 scale-105;
+}
+.logo:hover > img {
+    @apply drop-shadow-[0_0_2em_#503cff66];
+}
+
+@keyframes borderAnim {
+    0% {
+        --angle: 0deg;
+    }
+    100% {
+        --angle: 360deg;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .side {
+        @apply mx-8;
+    }
+    #ig-embed {
+        min-width: 60%;
+        aspect-ratio: 4 / 3;
+    }
+    #ig-embed > iframe {
+        width: 100%;
+    }
+}

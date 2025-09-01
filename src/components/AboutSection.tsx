@@ -1,5 +1,3 @@
-import React from 'react';
-
 import dremelImage from '/img/dremel.jpg';
 
 export default function AboutSection() {

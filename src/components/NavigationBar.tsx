@@ -1,6 +1,4 @@
-import React from 'react';
 import roboticsLogo from '/img/robotlogo.jpg';
-import '/src/style.css';
 
 export default function NavBar() {
     return (
