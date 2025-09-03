@@ -9,14 +9,14 @@ const memberInfo = [
     {
         name: "Aaron Perez Almanza",
         image: "https://placehold.co/128x128",
-        role: "Club President",
+        role: "Supreme Leader",
         description: `Aaron leads our team in the process of building our robots as club president. He 
-        loves coding and is a software engineer with over a year of experience in web development.`,
+        loves coding and is a software engineer with some experience in web development.`,
     },
     {
         name: "Luis Villela",
         image: "https://placehold.co/128x128",
-        role: "Senior Robot Man",
+        role: "Lead Programmer",
         description: `Luis is a software engineer with a passion for 
         robotics and automation. He is part of the club's programming 
         division and has been a part of the club since 2024.`,
@@ -38,7 +38,7 @@ const memberInfo = [
     {
         name: "Eliseo Bugarin",
         image: "https://placehold.co/128x128",
-        role: "Junior Engineer",
+        role: "Criminal Prosecutor",
         description: `Eliseo has been a part of the team since 2024 and is always eager to learn and contribute. 
         He has a passion for technology and is excited to be part of our robotics team.`,
     }
