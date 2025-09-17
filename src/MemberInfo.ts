@@ -38,7 +38,7 @@ const memberInfo = [
     {
         name: "Eliseo Bugarin",
         image: "https://placehold.co/128x128",
-        role: "Criminal Prosecutor",
+        role: "Social Media Manager",
         description: `Eliseo has been a part of the team since 2024 and is always eager to learn and contribute. 
         He has a passion for technology and is excited to be part of our robotics team.`,
     }
