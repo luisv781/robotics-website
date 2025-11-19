@@ -27,7 +27,7 @@ export default function Header() {
                     alt='CHS Robotics Logo'
                 />
             </a>
-            <h1 className='m-2 text-8xl max-lg:text-6xl font-extrabold text-transparent max-lg:text-white bg-gradient-to-r from-blue-50 from-20% to-blue-400 bg-clip-text bg-size-[300%_auto] bg-position-[0%] hover:bg-position-[60%] transition-all duration-300'>
+            <h1 className='m-2 text-7xl max-lg:text-6xl font-extrabold text-transparent max-lg:text-white bg-gradient-to-r from-blue-50 from-20% to-blue-400 bg-clip-text bg-size-[300%_auto] bg-position-[0%] hover:bg-position-[60%] transition-all duration-300'>
                 CHS ROBOTICS CLUB
             </h1>
             <TypewriterEffect

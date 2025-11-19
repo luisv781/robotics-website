@@ -58,7 +58,7 @@ nav .links a {
         @apply max-w-full text-center;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
     nav {
         @apply justify-center;
     }
