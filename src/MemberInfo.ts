@@ -19,6 +19,13 @@ const memberInfo = [
         loves coding and is a software engineer with some experience in web development.`,
     },
     {
+        name: "Danny Argueta",
+        image: dannyImg,
+        role: "Vice President",
+        description: `Danny is a junior engineer with a strong interest in robotics. 
+        He is always looking for new challenges and opportunities to grow.`,
+    },
+    {
         name: "Luis Villela",
         image: luisImg,
         role: "Lead Programmer",
@@ -32,13 +39,6 @@ const memberInfo = [
         role: "Amateur Engineer",
         description: `Carlos is an amateur engineer with a keen interest in 
         robotics. He is always eager to learn and improve his skills.`,
-    },
-    {
-        name: "Danny Argueta",
-        image: dannyImg,
-        role: "Engineer",
-        description: `Danny is a junior engineer with a strong interest in robotics. 
-        He is always looking for new challenges and opportunities to grow.`,
     },
     {
         name: "Alvaro Chapa",
