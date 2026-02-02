@@ -36,9 +36,9 @@ const memberInfo = [
     {
         name: "Carlos Paiz",
         image: carlosImg,
-        role: "Amateur Engineer",
-        description: `Carlos is an amateur engineer with a keen interest in 
-        robotics. He is always eager to learn and improve his skills.`,
+        role: "Treasurer",
+        description: `Carlos is the treasurer of our 
+        robotics club. He is always eager to show up and do nothing.`,
     },
     {
         name: "Alvaro Chapa",
