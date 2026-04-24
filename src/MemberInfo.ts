@@ -19,6 +19,12 @@ const memberInfo = [
         loves coding and is a software engineer with some experience in web development.`,
     },
     {
+        name: "Alvaro Chapa",
+        image: "https://placehold.co/128x128",
+        role: "Vice President",
+        description: ``,
+    },
+    {
         name: "Luis Villela",
         image: luisImg,
         role: "Lead Programmer",
@@ -32,12 +38,6 @@ const memberInfo = [
         role: "Treasurer",
         description: `Carlos is the treasurer of our 
         robotics club. He is always eager to show up and do nothing.`,
-    },
-    {
-        name: "Alvaro Chapa",
-        image: "https://placehold.co/128x128",
-        role: "Engineer",
-        description: ``,
     },
     {
         name: "Eliseo Bugarin",
