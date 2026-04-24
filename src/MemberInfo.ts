@@ -22,7 +22,7 @@ const memberInfo = [
         name: "Alvaro Chapa",
         image: "https://placehold.co/128x128",
         role: "Vice President",
-        description: `lead viceroy, second in command, next inheritor of the throne, whichever you
+        description: `Lead viceroy, second in command, next inheritor of the throne, whichever you
         think sounds best. Chapa is going to be the next president of the Robotics club. His devotion
         and commitment has earned himself a special spot in the club.`,
     },
