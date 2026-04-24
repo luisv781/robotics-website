@@ -24,7 +24,7 @@ const memberInfo = [
         role: "Vice President",
         description: `lead viceroy, second in command, next inheritor of the throne, whichever you
         think sounds best. Chapa is going to be the next president of the Robotics club. His devotion
-        and commitment to the club has earned himself a special spot in the club.`,
+        and commitment has earned himself a special spot in the club.`,
     },
     {
         name: "Luis Villela",
